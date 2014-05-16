@@ -25,59 +25,61 @@
 	    android:layout_height="250px" 
         android:orientation="vertical"
 	 	android:layout_alignParentBottom="true"
-	 	android:layout_marginBottom="75px"
-	 	android:layout_marginLeft="110px"
-	 	android:layout_marginRight="110px" >        
-        
+	 	android:layout_marginBottom="75px" >   
+		    
+            <LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+		    	android:layout_weight="1"
+			 	android:layout_marginLeft="110px"
+			 	android:layout_marginRight="110px"  >
+			    
+			    <TextView  
+			    android:id="@+id/touch_1"
+			    android:layout_weight="1"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="fill_parent" 
+			    android:background="#0000FF"
+			    android:textColor="#FFFFFF"
+			    android:gravity="center"
+			    android:textSize="20pt"
+			    android:text="1"
+			    />
+			    
+			    <TextView  
+			    android:id="@+id/touch_2"
+			    android:layout_weight="1"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="fill_parent" 
+			    android:background="#00FF00"
+			    android:textColor="#FFFFFF"
+			    android:gravity="center"
+			    android:textSize="20pt"
+			    android:text="2"
+			    />
+			    
+			    <TextView  
+			    android:id="@+id/touch_3"
+			    android:layout_weight="1"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="fill_parent" 
+			    android:background="#FF0000"
+			    android:textColor="#FFFFFF"
+			    android:gravity="center"
+			    android:textSize="20pt"
+			    android:text="3"
+			    />
+			    
+			</LinearLayout>
+     	
 		<LinearLayout
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_weight="1"
-		    android:orientation="horizontal" >
-		    
-		    <TextView  
-		    android:id="@+id/touch_1"
-		    android:layout_weight="1"
-		    android:layout_width="wrap_content" 
-		    android:layout_height="fill_parent" 
-		    android:background="#0000FF"
-		    android:textColor="#FFFFFF"
-		    android:gravity="center"
-		    android:textSize="20pt"
-		    android:text="1"
-		    />
-		    
-		    <TextView  
-		    android:id="@+id/touch_2"
-		    android:layout_weight="1"
-		    android:layout_width="wrap_content" 
-		    android:layout_height="fill_parent" 
-		    android:background="#00FF00"
-		    android:textColor="#FFFFFF"
-		    android:gravity="center"
-		    android:textSize="20pt"
-		    android:text="2"
-		    />
-		    
-		    <TextView  
-		    android:id="@+id/touch_3"
-		    android:layout_weight="1"
-		    android:layout_width="wrap_content" 
-		    android:layout_height="fill_parent" 
-		    android:background="#FF0000"
-		    android:textColor="#FFFFFF"
-		    android:gravity="center"
-		    android:textSize="20pt"
-		    android:text="3"
-		    />
-		    
-		</LinearLayout>
-
-		<LinearLayout
-		    android:layout_width="fill_parent"
-		    android:layout_height="wrap_content"
-		    android:layout_weight="1"
-		    android:orientation="horizontal" >
+		    android:orientation="horizontal"
+		 	android:layout_marginLeft="110px"
+		 	android:layout_marginRight="110px" >
 		    
 		    <TextView  
 		    android:id="@+id/touch_4"
@@ -121,7 +123,9 @@
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
 		    android:layout_weight="1"
-		    android:orientation="horizontal" >
+		    android:orientation="horizontal"
+		 	android:layout_marginLeft="110px"
+		 	android:layout_marginRight="110px" >
 		    
 		    <TextView  
 		    android:id="@+id/touch_7"

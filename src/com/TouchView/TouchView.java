@@ -1,9 +1,14 @@
 package com.TouchView;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+import android.os.Environment;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -64,6 +69,10 @@ public class TouchView extends Activity implements OnTouchListener {
 				startActivity(intent);
 			}
 		});
+       File file=new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/TouchView");
+       if (!file.exists()) {
+    	   file.mkdir();
+       }
     }
     public void Display(String eventType,MotionEvent event,View v){
     	//触点相对坐标的信息
@@ -122,7 +131,8 @@ public class TouchView extends Activity implements OnTouchListener {
 		default:
 			break;
 		}
-    	if (eventType.equals("ACTION_MOVE")) {
+        String name=Environment.getExternalStorageDirectory().getAbsolutePath()+"/TouchView/"+string+".txt";
+    	if (event.getAction()==MotionEvent.ACTION_DOWN) {
         	editText.setText(editText.getText()+string);
 		}
     	msg+="事件按钮"+string+"\n";
@@ -134,6 +144,20 @@ public class TouchView extends Activity implements OnTouchListener {
     	msg+="触点长轴"+String.valueOf(major)+"\n";
     	msg+="触点短轴"+String.valueOf(minor)+"\n";
     	eventlable.setText(msg);
+    	try {
+			FileOutputStream fileOutputStream=new FileOutputStream(name,true);
+			fileOutputStream.write("-----------------\n".getBytes());
+			fileOutputStream.write(msg.getBytes());
+			fileOutputStream.write("-----------------\n".getBytes());
+			fileOutputStream.flush();
+			fileOutputStream.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 	public int ProcessHistory(MotionEvent event){
     	int history =event.getHistorySize();
