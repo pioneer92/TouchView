@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    >
+    <TextView  
+    android:id="@+id/history_label"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="历史数据"
+  
+    />
+    <TextView  
+    android:id="@+id/event_label"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp" 
+    android:text="触摸事件："
+    />
+
+    <LinearLayout
+	    android:layout_width="fill_parent" 
+	    android:layout_height="250px" 
+        android:orientation="vertical"
+	 	android:layout_alignParentBottom="true"
+	 	android:layout_marginBottom="75px" >        
+	 	
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:orientation="horizontal" >
+		    
+		    <TextView  
+		    android:id="@+id/touch_q"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#0000FF"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="q"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_w"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#00FF00"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="w"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_e"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#FF0000"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="e"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_r"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#0000FF"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="r"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_t"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#00FF00"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="t"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_y"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#FF0000"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="y"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_u"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#0000FF"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="u"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_i"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#00FF00"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="i"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_o"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#FF0000"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="o"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_p"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#0000FF"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="p"
+		    />
+		    
+		</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:layout_marginLeft="30px"
+		    android:layout_marginRight="30px"
+		    android:orientation="horizontal" >
+		    
+		    <TextView  
+		    android:id="@+id/touch_a"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#0000FF"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="a"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_s"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#00FF00"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="s"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_d"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#FF0000"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="d"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_f"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#0000FF"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="f"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_g"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#00FF00"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="g"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_h"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#FF0000"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="h"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_j"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#0000FF"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="j"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_k"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#00FF00"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="k"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_l"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#FF0000"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="l"
+		    />
+		    
+		</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:layout_marginLeft="75px"
+		    android:layout_marginRight="75px"
+		    android:orientation="horizontal" >
+		    
+		    <TextView  
+		    android:id="@+id/touch_z"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#0000FF"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="z"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_x"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#00FF00"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="x"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_c"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#FF0000"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="c"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_v"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#0000FF"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="v"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_b"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#00FF00"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="b"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_n"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#FF0000"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="n"
+		    />
+		    
+		    <TextView  
+		    android:id="@+id/touch_m"
+		    android:layout_weight="1"
+		    android:layout_width="33dp" 
+		    android:layout_height="fill_parent" 
+		    android:background="#0000FF"
+		    android:textColor="#FFFFFF"
+		    android:gravity="center"
+		    android:textSize="20pt"
+		    android:text="m"
+		    />
+		    
+		</LinearLayout>
+
+    </LinearLayout>
+
+	<Button
+	    android:id="@+id/switchButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/event_label"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginTop="32dp"
+	    android:text="9键" />
+
+	<EditText
+	    android:id="@+id/editText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/switchButton"
+	    android:layout_centerHorizontal="true"
+	    android:textColor="#000000"
+	    android:ems="10" >
+	</EditText>
+
+</RelativeLayout>
